@@ -1,3 +1,4 @@
+/* artist routes*/
 function fetchAllArtists(artists, app) {
   app.get("/api/artists", (req, resp) => {
     resp.json(artists);
@@ -20,6 +21,8 @@ function fetchArtistsByNation(artists, app) {
   });
 }
 
+
+/* gallery routes*/
 function fetchAllGalleries(galleries, app) {
   app.get("/api/galleries", (req, resp) => {
     resp.json(galleries);
@@ -42,6 +45,7 @@ function fetchGalleriesByNation(galleries, app) {
   });
 }
 
+/* painting routes*/
 function fetchAllPaintings(paintings, app) {
   app.get("/api/paintings", (req, resp) => {
     resp.json(paintings);
